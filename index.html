@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  -->
+    <meta name="description" content="Fetch By Aditya Chaudhary">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Aditya Chaudhary">
+    <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDNs -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Fetch In Javascript</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    :root{
+        /* Colors */
+        --primaryColor : "#FFFFFF";
+
+        /* Fonts */
+        --primaryFont : "Poppins",cursive;
+        --secondaryFont : "Oxanium",cursive;
+    }
+
+    html,body{
+        height: 100%;
+        color: var(--primaryColor);
+        font-family: var(--secondaryFont);
+    }
+
+    .fetch{
+        background: #f1e3e3;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title h2{
+        margin: 2%;
+        font-size: 2rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .list{
+        display: flex;
+        justify-content: center;
+        margin-top: 0%;
+    }
+
+    .list ul li{
+        padding: 1em 1em 1em 1em;
+        font-size: 1.4rem;
+        font-family: var(--secondaryFont);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <section>
+        <div class="fetch">
+            <div class="title">
+                <h2>Users</h2>
+            </div>
+
+            <!-- USER LIST COMING FROM JAVASCRIPT -->
+            <div class="list">
+                <ul id="list-names">
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
